@@ -1,0 +1,50 @@
+@import 'semantic';
+@import 'plugins';
+$text-color: #fff;
+.modal {
+    padding: 6em;
+}
+// modal button on home screen
+#showModalBtn {
+    background: #a10022;
+    color: $text-color;
+    display: block;
+    font-size: 0.75em;
+    line-height: 1.5;
+    padding: 0.65em;
+    position: absolute;
+    text-transform: uppercase;
+    top: 5px;
+    left: 5px;
+    z-index: 2;
+}
+// scene buttons in modal
+.modal .button {
+    transition: padding 0.5s;
+    transition-timing-function: ease-in-out;
+    font-size: 1em;
+    padding: 2em;
+    width: 100%;
+    color: $text-color;
+}
+.modal .button:active,
+.modal .button:hover {
+    padding: 3em;
+    color: #fff;
+    flex-grow: 2;
+}
+.ui .toggle .button {
+    background-size: cover;
+}
+.a-enter-vr-modal:after {
+    background: transparent;
+}
+.a-enter-vr-modal {
+    background: transparent;
+    font-size: 0.70em;
+    width: 200px;
+    bottom: 20px;
+}
+.modal {
+    padding: 3em;
+}
